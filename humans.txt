@@ -1,0 +1,13 @@
+/* SITE INFO */
+Author: Jairo Ruiz
+	Twitter: @jairoglyph
+	Location: Nashville, TN
+
+Site: Subway Lights
+	Twitter: @subwaylights
+	Location: Nashville, TN
+
+/* TECHNOLOGY */
+Standards: HTML5, CSS2, CSS3
+CMS: n/a
+Software: Sublime Text 2, Transmit, Photoshop, Soundcloud API
