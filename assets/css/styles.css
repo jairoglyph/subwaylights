@@ -1,0 +1,136 @@
+/*html { 
+	background: #051319 url("assets/images/subwaylights-bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	font-size: 100%;
+}*/
+html {
+    background: #051319 url("../images/subwaylights-bg.jpg") no-repeat left top;
+}
+body,p,span,h1,h2,h3,h4,h5,h6,a { 
+	color: #fff; 
+	font-family: 'latoregular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+a:link, a:active, a:visited {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	transition: border color 0.2s ease-in-out;
+}
+a:hover {
+	color: #28ADC7; /*#64d1e6;*/
+    text-shadow: 1px 1px 0 #00242B;
+}
+.nav {
+    position: relative;
+    margin: 10px 0;
+}
+.nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 465px;
+}
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li a {
+    padding: 0 12px 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+section, article {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+#logo {
+    background: transparent url("../images/subwaylights-logo1.png") no-repeat 0 0;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    height: 196px;
+    width: 250px;
+}
+#logo a {
+    display: block;
+    text-shadow: 1px 1px 0 #00242B;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    height: 100%;
+    width: 100%;
+}
+#logo a span {
+    display: none;
+}
+.band {
+    background-color: rgba(55,145,175,0.2);
+    padding: 1em;
+    line-height: 1.5em;
+    text-align: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.band a:link, .band a:active, .band a:visited {
+    color: #28ADC7;
+    text-decoration: underline;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    transition: border color 0.2s ease-in-out;
+}
+.band a:hover {
+    color: #64d1e6;
+}
+li.soundcloud {
+    visibility: hidden;
+}
+#soundcloud-player {
+    height: 360px;
+    width: 100%;
+    display: default;
+}
+img.band-photo {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*IE 8*/
+}
+@media screen and (max-width: 650px) {
+    body {
+        width: 90%;
+    }
+    .nav ul {
+        width: 280px;
+    }
+    .nav ul li {
+        display: block;
+        text-align: center;
+    }
+    .nav li a {
+        display: block;
+        padding: 7px 0;
+    }
+    /*
+    li.soundcloud {
+        visibility: visible;
+    }
+    #soundcloud-player {
+        display: none;
+    }
+    */
+}
