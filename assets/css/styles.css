@@ -95,6 +95,7 @@ section, article, footer {
 .content {
     background-color: rgba(55,145,175,0.2);
     padding: 1em;
+    margin-bottom: 0.8em;
     line-height: 1.5em;
     text-align: left;
     -webkit-border-radius: 3px;
@@ -122,6 +123,20 @@ img.band-photo {
     height: auto;
     width: auto\9; /*IE 8*/
 }
+.social-icons a {
+    background-image: url("../images/social-icons.png");
+    display: block;
+    float: left;
+    height: 45px;
+    width: 45px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right:4px;
+}
+.social-icons a.fb { background-position: 0 0; }
+.social-icons a.tw { background-position: -48px 0; }
+.social-icons a.ig { background-position: -97px 0; }
 .twitter-block, .fb-like-block {
     float: left;
     overflow: hidden;
