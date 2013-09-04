@@ -58,13 +58,7 @@
 	<section>
         <article>
             <div class="content">
-                <!--<iframe id="soundcloud-player" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F7645749&amp;color=28adc7&amp;auto_play=false&amp;show_artwork=false"></iframe>-->
-                <!--
-                <p>
-                    <a href="https://twitter.com/SubwayLights" class="twitter-follow-button" data-show-count="false">Follow @SubwayLights</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </p>
-            -->
+                <h1>Band bio</h1>
                 <p>
                     <strong>SUBWAY LIGHTS</strong> are:<br>
                     Gary Call - vocalist/guitarist/programmer<br>
@@ -99,6 +93,33 @@
             </div>
         </article>
     </section>
+
+    <section>
+        <article>
+            <div class="content">
+                <form method="post" id="signup" name="signup" action="https://app.e2ma.net/app2/audience/signup/1745156/12452/?v=a">
+                    <input type="hidden" name="prev_member_email" id="id_prev_member_email"/>
+                    <input type="hidden" name="source" id="id_source"/>
+                    <input type="hidden" name="group_1308836" value="1308836" id="id_group_1308836"/>
+                    <input type="hidden" name="prev_member_email" value=""/>
+                    <fieldset>
+                        <h3>Join our mailing list</h3>
+                        <p>
+                            Receive updates and exclusive offers from the band! We will not be sending a crazy amount of emails. Probably once a month, twice if there is some seriously awesome news. And we promise not to sell your email.
+                        </p>
+                        <p>
+                            <label for="id_email">Please enter your email</label>
+                            <input type="email" name="email" id="id_email"/>
+                        </p>
+                        <p>
+                            <input class="submit" type="submit" name="Submit" value="Submit"/>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </article>
+    </section>
+
     <footer>
         <div class="content cf social-icons">
             <a href="https://www.facebook.com/SubwayLights" class="fb" title="Like Subway Lights on Facebook"><span>Facebook</span></a>
@@ -108,6 +129,20 @@
     </footer>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="assets/js/jquery.validate.js"></script>
+<script>
+$().ready(function() {
+    // validate signup form on keyup and submit
+    $("#signup").validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            }
+        }
+    });
+});
+</script>
 
 
 </body>
