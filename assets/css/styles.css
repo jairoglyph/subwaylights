@@ -113,13 +113,17 @@ section, article, footer {
 .content a:hover {
     color: #64d1e6;
 }
-.content h1, .content h2, .content h3 {
+.content h1, .content h2, .content h3, .content h4 {
     color: #64d1e6;
     font-weight: normal;
     text-transform: uppercase;
 }
 .content h1 { font-size: 150%; }
 .content h2, .content h3 { font-size: 120%; }
+.content h4 { font-size: 110% }
+
+.past-shows { margin-bottom: 60px; }
+
 #soundcloud-player {
     height: 360px;
     width: 100%;
