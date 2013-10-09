@@ -122,7 +122,7 @@ section, article, footer {
 .content h2, .content h3 { font-size: 120%; }
 .content h4 { font-size: 110% }
 
-.past-shows { margin-bottom: 60px; }
+.current-shows { margin-bottom: 60px; }
 
 #soundcloud-player {
     height: 360px;
