@@ -1,0 +1,42 @@
+<!-- FaceBook "Like" button script -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '113869198637480', // App ID from the app dashboard
+          status     : true, // Check Facebook Login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true // Look for social plugins on the page
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+      };
+      // Load the SDK asynchronously
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- eos -->
+
+    <div class="content">
+                <div class="cf social-block">
+                    <div class="fb-like-block">
+                        <div class="fb-like" data-href="https://facebook.com/SubwayLights" data-width="200" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+                    </div>
+                    <div class="twitter-block">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="SubwayLights">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                    <div class="pinterest-block">
+                        <a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.subwaylights.com%2Fmusic.html&media=http%3A%2F%2Fwww.subwaylights.com%2Fassets%2Fimages%2Fsubwaylights-artwork-cover.jpg&description=Subway%20Lights%20music." data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+                        <script>(function(w,d,load){var script,first=d.getElementsByTagName('SCRIPT')[0],n=load.length,i=0,go=function(){for(i=0;i<n;i=i+1){script=d.createElement('SCRIPT');script.type='text/javascript';script.async=true;script.src=load[i];first.parentNode.insertBefore(script, first);}}if(w.attachEvent){w.attachEvent('onload', go);}else{w.addEventListener('load', go, false);}}(window, document,['//assets.pinterest.com/js/pinit.js']));</script>
+                    </div>
+                </div>
+                <!-- end social-block -->
+                <iframe id="soundcloud-player" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F7645749&amp;color=28adc7&amp;auto_play=false&amp;show_artwork=false"></iframe>
+            </div>
