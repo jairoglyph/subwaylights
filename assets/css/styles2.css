@@ -1,0 +1,287 @@
+/*html { 
+	background: #051319 url("assets/images/subwaylights-bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	font-size: 100%;
+}*/
+html {
+    background: #000; /* url("../images/subwaylights-bg.jpg") no-repeat left top */
+}
+
+body,p,span,h1,h2,h3,h4,h5,h6,a { 
+	color: #fff; 
+	font-family: 'latoregular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+body {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+*/
+
+#outer-wrapper {
+    background-image: url("../images/subwaylights-body-bg.jpg");
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+#title-area {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 3% auto 0 auto;
+}
+
+#title-area a {
+    display: block;
+    width: 100%;
+}
+
+#title-area a img {
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+a:link, a:active, a:visited {
+	color: #013071;
+	text-decoration: none;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	transition: border color 0.2s ease-in-out;
+}
+
+a:hover {
+	color: #fff; /*#64d1e6;*/
+    text-shadow: 1px 1px 0 #00242B;
+}
+
+.nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 1em auto 30px;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 1em 1em 0;
+    margin: 0;
+}
+
+.nav ul li.last {
+    padding-right: 0;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+section, article, footer {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.footer-nav ul {
+    padding: 0;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 12px 0 0;
+    margin: 0;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+}
+
+#logo {
+    background: transparent url("../images/subwaylights-logo1.png") no-repeat 0 0;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    height: 196px;
+    width: 250px;
+}
+
+#logo a {
+    display: block;
+    text-shadow: 1px 1px 0 #00242B;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    height: 100%;
+    width: 100%;
+}
+
+#logo a span {
+    display: none;
+}
+
+.content {
+    background-color: rgba(55,145,175,0.2);
+    padding: 1em;
+    margin-bottom: 0.8em;
+    line-height: 1.5em;
+    text-align: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.content a:link, .content a:active, .content a:visited {
+    color: #28ADC7;
+    text-decoration: underline;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    transition: border color 0.2s ease-in-out;
+}
+
+.content a:hover {
+    color: #64d1e6;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+    color: #64d1e6;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.content h1 { font-size: 150%; }
+.content h2, .content h3 { font-size: 120%; }
+.content h4 { font-size: 110% }
+
+.current-shows { margin-bottom: 60px; }
+
+#soundcloud-player {
+    height: 360px;
+    width: 100%;
+    display: default;
+}
+
+img.band-photo {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*IE 8*/
+}
+
+.social-icons a {
+    background-image: url("../images/social-icons.png");
+    display: block;
+    float: left;
+    height: 45px;
+    width: 45px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right:4px;
+}
+
+.social-icons a.fb { background-position: 0 0; }
+.social-icons a.tw { background-position: -48px 0; }
+.social-icons a.ig { background-position: -97px 0; }
+.twitter-block, .fb-like-block {
+    float: left;
+    overflow: hidden;
+    width: 100px;
+}
+
+.pinterest-block {
+    float: left;
+    overflow: hidden;
+    width: 50px;
+}
+
+.social-block {
+    display: block;
+    width: auto;
+}
+
+/* signup form */
+#signup { 
+    padding: 0;
+    margin: 0;
+}
+
+#signup fieldset { 
+    border: none;
+    border-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#signup label { 
+    display: block;
+}
+
+#signup input[type=email] { 
+    padding: 0 7px;
+    height: 28px;
+    width: 210px;
+}
+
+#signup input.error[type=email] { 
+    border: 1px solid red;
+}
+
+#signup label.error { 
+    color: red;
+    font-style: italic;
+}
+
+#signup input.submit, #signup input[type=submit] { 
+    background-color: #64d1e6;
+    border: none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    height: 36px;
+    width: 85px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        width: 90%;
+    }
+    /*
+    .nav ul {
+        width: 280px;
+    }
+    .nav ul li {
+        display: block;
+        text-align: center;
+    }
+    .nav li a {
+        display: block;
+        padding: 7px 0;
+    }
+    */
+}
