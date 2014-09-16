@@ -184,8 +184,7 @@ img.band-photo {
 
 .social-icons a {
     background-image: url("../images/social-icons.png");
-    display: block;
-    float: left;
+    display: inline-block;
     height: 45px;
     width: 45px;
     text-indent: 100%;
